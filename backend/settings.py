@@ -105,6 +105,10 @@ MEDIA_URL = "media/"
 CORS_ALLOW_ALL_ORIGINS = True
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.onrender.com",
+]
+
 AUTH_USER_MODEL = "cm_app.User"
 
 
@@ -116,8 +120,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER='syntaxslothful@gmail.com'
-EMAIL_HOST_PASSWORD='Slothful_syntax123'
+EMAIL_HOST_USER = 'syntaxslothful@gmail.com'
+EMAIL_HOST_PASSWORD = 'Slothful_syntax123'
 
 """
 End of code addition by - Ashish Dewangan on 26-05-2024
